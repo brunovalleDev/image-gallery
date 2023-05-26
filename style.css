@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 1380px;
+  width: 90%;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.botoes-filtros {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 30px;
+  font-size: 18px;
+  outline-color: transparent;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 4px 0px rgba(84, 72, 72, 0.852);
+  border-radius: 6px;
+}
+
+.active {
+  background-color: rgb(97, 18, 18);
+  color: white;
+}
+
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 1rem;
+}
+
+.card {
+  box-shadow: 0px 0px 4px 0px rgba(156, 151, 151, 0.852);
+  border: none;
+  margin-top: 2rem;
+  flex-basis: 300px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.card.hide {
+  display: none;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 4px 0px rgba(34, 3, 3, 0.852);
+  transform: scale(1.01);
+  transition: transform 0.15s linear;
+}
+
+.card img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.card__info {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.titulo__produto {
+  font-size: 1.2rem;
+}
+
+.descricao__produto {
+  font-size: 1rem;
+}
